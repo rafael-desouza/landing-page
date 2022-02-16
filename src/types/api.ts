@@ -3,6 +3,13 @@ export type LandingPageProps = {
   header: HeaderProps
   sectionAboutProject: SectionAboutProjectProps
   sectionTech: SectionTechProps
+  sectionConcepts: SectionConceptsProps
+  sectionModules: SectionModulesProps
+  sectionAgenda: SectionAgendaProps
+  pricingBox: PricingBoxProps
+  sectionAboutUs: SectionAboutUsProps
+  sectionReviews: SectionReviewsProps
+  sectionFaq: SectionFaqProps
 }
 
 export type LogoProps = {
@@ -43,4 +50,77 @@ export type TechIcon = {
   icon: {
     url: string
   }
+}
+
+export type SectionConceptsProps = {
+  title: string
+  concepts: ConceptsProps[]
+}
+
+export type ConceptsProps = {
+  id: number
+  title: string
+}
+
+export type SectionModulesProps = {
+  title: string
+  modules: ModuleProps[]
+}
+
+export type ModuleProps = {
+  title: string
+  subtitle: string
+  description: string
+}
+
+export type SectionAgendaProps = {
+  title: string
+  description: string
+}
+
+export type PricingBoxProps = {
+  totalPrice: number
+  numberInstallments: number
+  priceInstallment: number
+  benefits: string
+  button: ButtonProps
+}
+
+export type SectionAboutUsProps = {
+  title: string
+  authors: AuthorsProps[]
+}
+
+export type AuthorsProps = {
+  photo: ImageProps
+  role: string
+  name: string
+  description: string
+  socialLinks: SocialLinksProps[]
+}
+
+export type SocialLinksProps = {
+  title: string
+  url: string
+}
+
+export type SectionReviewsProps = {
+  title: string
+  reviews: ReviewProps[]
+}
+
+export type ReviewProps = {
+  name: string
+  text: string
+  photo: ImageProps
+}
+
+export type SectionFaqProps = {
+  title: string
+  questions: Question[]
+}
+
+export type Question = {
+  question: string
+  answer: string
 }
