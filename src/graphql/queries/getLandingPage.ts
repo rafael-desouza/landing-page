@@ -1,7 +1,7 @@
 import { gql } from 'graphql-request'
 
-const GEt_LANDING_PAGE = gql`
-  query GEt_LANDING_PAGE {
+const GET_LANDING_PAGE = gql`
+  query GET_LANDING_PAGE {
     landingPage {
       logo {
         alternativeText
@@ -11,4 +11,4 @@ const GEt_LANDING_PAGE = gql`
   }
 `
 
-export default GEt_LANDING_PAGE
+export default GET_LANDING_PAGE
